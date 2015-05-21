@@ -69,9 +69,8 @@ tidyDataAVGSet <- aggregate(p,list(tidyDataSet$Subject, tidyDataSet$Activity), m
 names(tidyDataAVGSet)[1] <- "Subject"
 names(tidyDataAVGSet)[2] <- "Activity"# Created csv (tidy data set) in diretory
 
-# Created csv (tidy data set) in diretory
+# Created txt (tidy data set) in diretory
 write.table(tidyDataSet, tidyDataFile)
-# Created csv (tidy data set AVG) in diretory
 
 # Created txt (tidy data set AVG) in diretory
 write.table(tidyDataAVGSet, tidyDataFileAVGtxt, row.names = FALSE)
